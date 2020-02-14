@@ -1,6 +1,7 @@
 function setup() {
   createCanvas(400, 200);
   colorMode(HSB);
+  background(184,20,100);
 }
 
 var x = 0;
@@ -8,7 +9,7 @@ var h = 10;
 
 function draw() {
   stroke(random(60, 70), 100, 90);
-  line(x, height-10, x+random(10, 20), height-10-random(h));
+  line(x, height-10, x+random(10,h), height-10-random(h));
   noStroke();
 
   x = x + 10;
@@ -19,7 +20,7 @@ function draw() {
   }
 
   if (random(1000) > 999) {
-    fill(255);
+    fill(184,20,100);
     rect(0, 0, width, height-15);
     h = 10;
   }
