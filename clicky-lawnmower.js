@@ -1,6 +1,8 @@
 function setup() {
   createCanvas(400, 200);
   colorMode(HSB);
+  background(184,20,100);
+
 }
 
 var x = 0;
@@ -19,7 +21,7 @@ function draw() {
   }
 
   if (mouseIsPressed) {
-    fill(255);
+    fill(184,20,100);
     rect(0, 0, width, height-15);
     h = 10;
   }
