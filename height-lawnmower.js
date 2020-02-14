@@ -1,6 +1,7 @@
 function setup() {
   createCanvas(400, 200);
   colorMode(HSB);
+  background(184,20,100);
 }
 
 var x = 0;
@@ -19,7 +20,7 @@ function draw() {
   }
 
   if (h > 30) {
-    fill(255);
+    fill(184,20,100);
     rect(0, 0, width, height-15);
     h = 10;
   }
@@ -27,3 +28,4 @@ function draw() {
   fill(40, 100, 60);
   rect(0, height-10, width, 10);
 }
+
