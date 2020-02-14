@@ -1,6 +1,7 @@
 function setup() {
   createCanvas(400, 200);
   colorMode(HSB);
+  background(184,20,100);
 }
 
 var x = 0;
@@ -19,11 +20,11 @@ function draw() {
   }
   if (h>30){
     fill(random(270,360),100,90);
-    ellipse (x,height-random(h),5);
+    ellipse (x,height-random(h),h/20);
   }
   
   if (random(1000) > 999) {
-    fill(255);
+    fill(184,20,100);
     rect(0, 0, width, height-15);
     h = 10;
   }
